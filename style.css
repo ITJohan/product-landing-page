@@ -1,6 +1,10 @@
 body {
   margin: 0;
   text-align: center;
+  background: #B0BEC5;  /* fallback for old browsers */
+  color: white;
+  font-family: Arial;
+  font-weight: 500;
 }
 
 ul {
@@ -8,7 +12,26 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background: #333;
+  background: #78909C;
+  position: fixed;
+  width: 100%;
+  font-weight: 800;
+}
+
+button, input[type="submit"] {
+  background: #78909C;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+}
+
+button:hover, input[type="submit"]:hover {
+  background: #90A4AE;
+} 
+
+i {
+  color: #78909C;
 }
 
 .nav-link {
@@ -24,7 +47,11 @@ ul {
 }
 
 .nav-link:hover {
-  background: #111;
+  background: #607D8B;
+}
+
+.container {
+  padding-top: 50px;
 }
 
 #logo {
@@ -37,11 +64,33 @@ ul {
 
 #pricing {
   display: flex;
+  justify-content: center;
 }
 
-@media screen and (max-width: 600px) {
+.pricing-box {
+  margin: 20px;
+  padding: 10px 0;
+  border-radius: 10px;
+  width: 200px;
+  background: #607D8B;
+}
+
+.pricing-content {
+  background: white;
+  color: black;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 730px) {
   iframe {
     width: 403px;
     height: 252px;
+  }
+
+  #pricing {
+    flex-direction: column;
+    align-items: center;
   }
 }
