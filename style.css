@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #333;
+}
+
+.nav-link {
+  float: right;
+}
+
+.nav-link, #logo {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  background: #111;
+}
+
+#logo {
+  float: left;
+}
+
+#header-img {
+  height: 15px;
+}
+
+#pricing {
+  display: flex;
+}
+
+@media screen and (max-width: 600px) {
+  iframe {
+    width: 403px;
+    height: 252px;
+  }
+}
