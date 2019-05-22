@@ -1,10 +1,17 @@
 body {
   margin: 0;
   text-align: center;
-  background: #B0BEC5;  /* fallback for old browsers */
+  background: #B0BEC5;
   color: white;
   font-family: Arial;
   font-weight: 500;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 ul {
@@ -13,8 +20,6 @@ ul {
   padding: 0;
   overflow: hidden;
   background: #78909C;
-  position: fixed;
-  width: 100%;
   font-weight: 800;
 }
 
@@ -24,6 +29,7 @@ button, input[type="submit"] {
   border-radius: 5px;
   color: white;
   padding: 10px;
+  margin: 10px 0;
 }
 
 button:hover, input[type="submit"]:hover {
@@ -33,6 +39,27 @@ button:hover, input[type="submit"]:hover {
 i {
   color: #78909C;
 }
+
+footer {
+  background: #78909C;
+  padding: 10px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+div p {
+  padding: 5px;
+}
+
+
+a:hover {
+  color: rgb(214, 214, 214);
+  text-decoration: none;
+}
+
 
 .nav-link {
   float: right;
@@ -54,19 +81,6 @@ i {
   padding-top: 50px;
 }
 
-#logo {
-  float: left;
-}
-
-#header-img {
-  height: 15px;
-}
-
-#pricing {
-  display: flex;
-  justify-content: center;
-}
-
 .pricing-box {
   margin: 20px;
   padding: 10px 0;
@@ -82,6 +96,24 @@ i {
   margin: 0;
   padding: 0;
 }
+
+#features, #video, #pricing {
+  margin: 50px 0;
+}
+
+#logo {
+  float: left;
+}
+
+#header-img {
+  height: 15px;
+}
+
+#pricing {
+  display: flex;
+  justify-content: center;
+}
+
 
 @media screen and (max-width: 730px) {
   iframe {
